@@ -48,7 +48,7 @@ export default function ArtGallery() {
                 disabled={isLoading} 
                 onClick={fetchGalleryData}
             >
-                {isLoading ? "Loading..." : "Fetch Digimon Data"}
+                {isLoading ? "Loading..." : "Wanna see some digimons?"}
             </Button>
             <DisplayGalleryData />
         </div>
