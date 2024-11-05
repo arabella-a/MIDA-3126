@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import ArtGallery from "./components/molecules/ArtGallery";
+import Home from "./components/Template/Home";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <ArtGallery />
+      <Home />
     </div>
   );
 }
