@@ -1,10 +1,10 @@
-import Header from "../atoms/Header";
+import Heading from "../atoms/Heading";
 
 export default function Header() {
     return (
         <>
             <header>
-                <Header />
+                <Heading />
             </header>
         </>
     )

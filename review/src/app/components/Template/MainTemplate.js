@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "../atoms/Button";
 import Header from "../molecules/Header";
 
-export default function Home() {
+export default function MainTemplate() {
     const [galleryData, setGalleryData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -46,8 +46,9 @@ export default function Home() {
             <Header />
             <Button 
                 disabled={isLoading} 
-                onClick={fetchGalleryData}
-/>
+                onClick={fetchGalleryData}>
+                {isLoading ? "Fetch Digimon Data" : "See some digimons!"}        
+            </Button>      
             <DisplayGalleryData />
         </div>
     );
