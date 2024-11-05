@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Button from "../atoms/Button";
 import Header from "../molecules/Header";
+import DigimonCard from "../Organisms/DigimonCard";
 
 export default function MainTemplate() {
     const [galleryData, setGalleryData] = useState([]);
@@ -49,7 +50,7 @@ export default function MainTemplate() {
                 onClick={fetchGalleryData}>
                 {isLoading ? "Fetch Digimon Data" : "See some digimons!"}        
             </Button>      
-            <DisplayGalleryData />
+            <DigimonCard galleryData={galleryData} isLoading={isLoading}/>
         </div>
     );
 }
