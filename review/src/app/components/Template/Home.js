@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react";
 import Button from "../atoms/Button";
-import Header from "../atoms/Header";
+import Header from "../molecules/Header";
 
-export default function ArtGallery() {
+export default function Home() {
     const [galleryData, setGalleryData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -47,9 +47,7 @@ export default function ArtGallery() {
             <Button 
                 disabled={isLoading} 
                 onClick={fetchGalleryData}
-            >
-                {isLoading ? "Loading..." : "Wanna see some digimons?"}
-            </Button>
+/>
             <DisplayGalleryData />
         </div>
     );
